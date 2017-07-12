@@ -6,7 +6,7 @@ Em uma classe que precise gerar logs, receber um objeto do tipo Logger com o mé
 public void log(String message)
 
 Por exemplo, uma classe chamada CalculadoraDeImpostos, que no método calcular, irá imprimir o valor calculado:
-----------------------------------------------------------------------------------------------------------------
+```
 public class CalculadoraDeImpostos {
   
   private Logger logger;
@@ -23,7 +23,7 @@ public class CalculadoraDeImpostos {
   }
 
 }
-----------------------------------------------------------------------------------------------------------------
+```
 
 Alguns requisitos importantes:
 Antes de cada mensagem de log, deve ser impresso o dia e hora atuais
