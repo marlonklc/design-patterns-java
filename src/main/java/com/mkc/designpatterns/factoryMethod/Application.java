@@ -3,15 +3,16 @@ package com.mkc.designpatterns.factoryMethod;
 import java.util.Scanner;
 import com.mkc.designpatterns.factoryMethod.console.LoggerConsole;
 import com.mkc.designpatterns.factoryMethod.logger.Logger;
+import com.mkc.designpatterns.factoryMethod.txt.LoggerTxt;
 
 public class Application {
 
 	public static void main(String[] args) {
 
-		Logger loggerConsole = new LoggerConsole();
-		//Logger loggerTxt = new LoggerTxt();
+		//Logger logger = new LoggerConsole();
+		Logger logger = new LoggerTxt();
 
-		new Application().log(loggerConsole);
+		new Application().log(logger);
 	}
 
 	public void log(Logger logger) {
